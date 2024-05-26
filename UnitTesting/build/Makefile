@@ -57,10 +57,10 @@ RM = /opt/homebrew/Cellar/cmake/3.29.3/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/aivisvigo/University/Software_Engineering/LabGG/UnitTesting
+CMAKE_SOURCE_DIR = /Users/aivisvigo/LabGG/UnitTesting
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/aivisvigo/University/Software_Engineering/LabGG/UnitTesting/build
+CMAKE_BINARY_DIR = /Users/aivisvigo/LabGG/UnitTesting/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/aivisvigo/University/Software_Engineering/LabGG/UnitTesting/build/CMakeFiles /Users/aivisvigo/University/Software_Engineering/LabGG/UnitTesting/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/aivisvigo/LabGG/UnitTesting/build/CMakeFiles /Users/aivisvigo/LabGG/UnitTesting/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/aivisvigo/University/Software_Engineering/LabGG/UnitTesting/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/aivisvigo/LabGG/UnitTesting/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -129,6 +129,30 @@ test_node/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_node.dir/build.make CMakeFiles/test_node.dir/build
 .PHONY : test_node/fast
 
+node.o: node.cpp.o
+.PHONY : node.o
+
+# target to build an object file
+node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_node.dir/build.make CMakeFiles/test_node.dir/node.cpp.o
+.PHONY : node.cpp.o
+
+node.i: node.cpp.i
+.PHONY : node.i
+
+# target to preprocess a source file
+node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_node.dir/build.make CMakeFiles/test_node.dir/node.cpp.i
+.PHONY : node.cpp.i
+
+node.s: node.cpp.s
+.PHONY : node.s
+
+# target to generate assembly for a file
+node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_node.dir/build.make CMakeFiles/test_node.dir/node.cpp.s
+.PHONY : node.cpp.s
+
 test_node.o: test_node.cpp.o
 .PHONY : test_node.o
 
@@ -162,6 +186,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test_node"
+	@echo "... node.o"
+	@echo "... node.i"
+	@echo "... node.s"
 	@echo "... test_node.o"
 	@echo "... test_node.i"
 	@echo "... test_node.s"

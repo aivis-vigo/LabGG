@@ -1,3 +1,3 @@
-/Users/aivisvigo/University/Software_Engineering/LabGG/UnitTesting/build/CMakeFiles/test_node.dir
-/Users/aivisvigo/University/Software_Engineering/LabGG/UnitTesting/build/CMakeFiles/edit_cache.dir
-/Users/aivisvigo/University/Software_Engineering/LabGG/UnitTesting/build/CMakeFiles/rebuild_cache.dir
+/Users/aivisvigo/LabGG/UnitTesting/build/CMakeFiles/test_node.dir
+/Users/aivisvigo/LabGG/UnitTesting/build/CMakeFiles/edit_cache.dir
+/Users/aivisvigo/LabGG/UnitTesting/build/CMakeFiles/rebuild_cache.dir
